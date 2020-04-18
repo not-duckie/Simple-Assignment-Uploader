@@ -1,0 +1,13 @@
+{% extends 'profile_maker/create.html' %}
+{% block replace %}
+<CENTER>
+<div class="jumbotron">
+  <h1 class="display-4">File Uploaded Sucessfully!<br>{{ user_pr.Name }}</h1>
+  <p class="lead">its an awesome assignment</p>
+  <hr class="my-4">
+  <p>
+    {{ user_pr.display_picture.url }}<BR>
+   You have uploaded Assignment of {{ user_pr.Subject }}</p>
+</div>
+</CENTER>
+{% endblock %}
